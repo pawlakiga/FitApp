@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.fitappka.menu.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_newTrainingFragment"
+            app:destination="@id/newTrainingFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_newExerciseFragment"
+            app:destination="@id/newExerciseFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_trainingSelectionFragment"
+            app:destination="@+id/trainingSelectionFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/newTrainingFragment"
+        android:name="com.example.fitappka.newtraining.NewTrainingFragment"
+        android:label="NewTrainingFragment" >
+        <action
+            android:id="@+id/action_newTrainingFragment_to_exerciseSpecificationFragment"
+            app:destination="@id/exerciseSpecificationFragment" />
+        <action
+            android:id="@+id/action_newTrainingFragment_to_mainMenuFragment"
+            app:destination="@+id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseSpecificationFragment"
+        android:name="com.example.fitappka.exercisespecification.ExerciseSpecificationFragment"
+        android:label="ExerciseSpecificationFragment" >
+        <action
+            android:id="@+id/action_exerciseSpecificationFragment_to_newTrainingFragment"
+            app:destination="@id/newTrainingFragment"
+            app:popUpTo="@id/newTrainingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/newExerciseFragment"
+        android:name="com.example.fitappka.newexercise.NewExerciseFragment"
+        android:label="NewExerciseFragment" >
+        <action
+            android:id="@+id/action_newExerciseFragment_to_exerciseCalibrationFragment"
+            app:destination="@id/exerciseCalibrationFragment"
+             />
+        <action
+            android:id="@+id/action_newExerciseFragment_to_mainMenuFragment"
+            app:destination="@+id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseCalibrationFragment"
+        android:name="com.example.fitappka.newexercise.ExerciseCalibrationFragment"
+        android:label="ExerciseCalibrationFragment" >
+        <argument
+            android:name="exercise_data"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_exerciseCalibrationFragment_to_mainMenuFragment"
+            app:destination="@+id/mainMenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trainingSelectionFragment"
+        android:name="com.example.fitappka.traininginprogress.TrainingSelectionFragment"
+        android:label="TrainingSelectionFragment">
+        <action
+            android:id="@+id/action_trainingSelectionFragment_to_trainingInProgressFragment"
+            app:destination="@+id/trainingInProgressFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trainingInProgressFragment"
+        android:name="com.example.fitappka.traininginprogress.TrainingInProgressFragment"
+        android:label="TrainingInProgressFragment">
+        <action
+            android:id="@+id/action_trainingInProgressFragment_to_mainMenuFragment"
+            app:destination="@+id/mainMenuFragment"/>
+    </fragment>
+</navigation>

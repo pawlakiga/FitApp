@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.MainMenuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainMenuConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/app_name"
+                style="@android:style/TextAppearance.DeviceDefault.Widget.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/do_training_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/do_training_text"
+                android:textSize="@dimen/label_text_size"
+                app:layout_constraintRight_toLeftOf="@+id/plan_label"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+            <ImageButton
+                android:id="@+id/do_training"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/do_training_desc"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="@+id/do_training_label"
+                app:layout_constraintTop_toBottomOf="@+id/do_training_label"
+                app:srcCompat="@android:drawable/ic_menu_slideshow" />
+
+<!--
+            <TextView
+                android:id="@+id/statistics_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:text="@string/statistics_text"
+                android:textSize="@dimen/label_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/do_training_label" />
+-->
+
+         <!--   <ImageButton
+                android:id="@+id/statistics"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/statistics_desc"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="@+id/statistics_label"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_label"
+                app:srcCompat="@android:drawable/ic_menu_edit" />-->
+
+            <TextView
+                android:id="@+id/new_training_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/new_training_label_text"
+                android:textSize="@dimen/label_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/new_exercise_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/do_training" />
+
+            <ImageButton
+                android:id="@+id/new_training"
+                style="@style/Plus"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/new_training_desc"
+                app:layout_constraintStart_toStartOf="@+id/new_training_label"
+                app:layout_constraintTop_toBottomOf="@+id/new_training_label"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <TextView
+                android:id="@+id/new_exercise_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/new_exercise_label_text"
+                android:textSize="@dimen/label_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/new_training_label" />
+
+            <ImageButton
+                android:id="@+id/new_exercise"
+                style="@style/Plus"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/new_exercise_desc"
+                app:layout_constraintStart_toStartOf="@+id/new_exercise_label"
+                app:layout_constraintTop_toBottomOf="@+id/new_exercise_label"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <TextView
+                android:id="@+id/plan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/plan_text"
+                android:textSize="@dimen/label_text_size"
+                app:layout_constraintLeft_toRightOf="@id/do_training_label"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_name"
+                app:layout_constraintHorizontal_bias="0.7"/>
+
+            <ImageButton
+                android:id="@+id/plan"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/plan_desc"
+                app:layout_constraintStart_toStartOf="@+id/plan_label"
+                app:layout_constraintTop_toBottomOf="@+id/plan_label"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/ic_menu_month"
+                android:scaleX="1.5"
+                android:scaleY="1.5"/>
+                <!--android:scaleType="fitCenter"-->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

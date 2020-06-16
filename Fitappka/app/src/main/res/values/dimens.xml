@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="label_text_size">18sp</dimen>
+    <dimen name="label_margin">50dp</dimen>
+    <dimen name="spacing">50dp</dimen>
+    <dimen name="title_text_size">30sp</dimen>
+</resources>

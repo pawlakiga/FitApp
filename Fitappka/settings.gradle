@@ -1,0 +1,2 @@
+rootProject.name='Fitappka'
+include ':app'

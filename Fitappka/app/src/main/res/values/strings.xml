@@ -1,0 +1,61 @@
+<resources>
+    <!-- Strings to MainMenuFragment -->
+    <string name="app_name">Fitappka</string>
+    <string name="new_training_label_text">Nowy Trening</string>
+    <string name="new_exercise_label_text">Nowe Ćwiczenie</string>
+    <string name="new_training_desc">Przyscisk stwórz nowy trening</string>
+    <string name="new_exercise_desc">Przycisk stwórz nowe ćwiczenie</string>
+    <string name="statistics_text">Statystyki</string>
+    <string name="do_training_text">Zrób trening</string>
+    <string name="do_training_desc">Przycisk zrób trening</string>
+    <string name="statistics_desc">Przyscisk statystyki</string>
+    <string name="plan_text">Zaplanuj</string>
+    <string name="plan_desc">Przycisk zaplanuj</string>
+
+    <!-- Strings to NewTrainingFragment -->
+    <string name="training_name_hint">Podaj nazwę treningu</string>
+    <string name="add_exercise_text">Dodaj ćwiczenie</string>
+    <string name="add_break">Dodaj \nprzerwę</string>
+    <string name="exercise_specification_title">Wybierz ćwiczenie</string>
+    <string name="break_label_text">Ustaw czas przerwy</string>
+    <string-array name="training_types">
+        <item>Ramiona</item>
+        <item>Korpus</item>
+        <item>Nogi</item>
+    </string-array>
+
+    <!-- Strings to NewExerciseFragment -->
+    <string-array name="measure_types">
+        <item>Czas</item>
+        <item>Powtórzenia</item>
+    </string-array>
+
+    <!-- Strings to ExerciseCalibrationFragment -->
+    <string name="calibration_instruction">
+        Załóż czujnik w odpowiednim miejscu, \n
+        połącz się z nim
+        i nie ruszaj przez kilka sekund. \n
+        Następnie wykonaj 5 powtórzeń z \n kilkusekundowymi odstępami.
+    </string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Połączono</string>
+    <string name="disconnected">Rozłączono</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Połącz</string>
+    <string name="menu_disconnect">Rozłącz</string>
+    <string name="menu_scan">Skanuj</string>
+    <string name="menu_stop">Stop</string>
+    <string name="action_settings">Action settings</string>
+
+</resources>
